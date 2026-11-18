@@ -1,0 +1,72 @@
+{
+  "calendarInfo": {
+    "name": "Björn Ranelid – Officiell Evenemangskalender",
+    "note": "Denna fil används som förhandsdata/fallback tills Google Kalender-ID eller iCal-länk anges i assets/js/calendar.js."
+  },
+  "events": [
+    {
+      "id": "evt-past-1",
+      "title": "Bokens Afton – Samtal om Barnmorskan och ängeln",
+      "start": "2026-10-14T18:30:00+02:00",
+      "end": "2026-10-14T20:30:00+02:00",
+      "location": " Akademibokhandeln, Malmö",
+      "description": "Ett fullsatt författarsamtal och signering kring nya romanen Barnmorskan och ängeln. [Slutsålt]"
+    },
+    {
+      "id": "evt-past-2",
+      "title": "Hedvig Eleonora Kyrka – Världens vackraste kärlekshistoria",
+      "start": "2026-10-25T12:30:00+02:00",
+      "end": "2026-10-25T14:00:00+02:00",
+      "location": "Hedvig Eleonora kyrka, Stockholm",
+      "description": "Författarmöte i samtal om kärlekens, ordets och försoningens kraft. [Fri entré]"
+    },
+    {
+      "id": "evt-past-3",
+      "title": "Kiviks Musteri & Äpplets Hus – Paradismust & Poesi",
+      "start": "2026-11-01T15:00:00+01:00",
+      "end": "2026-11-01T17:00:00+01:00",
+      "location": "Kivik, Österlen",
+      "description": "Traditionsenligt litterärt anförande i hjärtat av Österlen. [Slutsålt]"
+    },
+    {
+      "id": "evt-upcoming-1",
+      "title": "Stockholms Konserthus – Ordet, kärleken och friheten [Fåtal platser]",
+      "start": "2026-11-26T19:00:00+01:00",
+      "end": "2026-11-26T21:00:00+01:00",
+      "location": "Stora Salen, Hötorget, Stockholm",
+      "description": "Björn Ranelid talar utan manuskript om det svenska språkets rikedom, bildningens betydelse och nya romanen Barnmorskan och ängeln. https://www.konserthuset.se"
+    },
+    {
+      "id": "evt-upcoming-2",
+      "title": "Ystads Teater – En filosofisk och litterär afton",
+      "start": "2026-12-05T19:30:00+01:00",
+      "end": "2026-12-05T21:30:00+01:00",
+      "location": "Sjömansgatan 13, Ystad",
+      "description": "En helkväll på Österlens klassiska teaterscen med reflektioner, humor och boksignering i foajén efter framträdandet. https://www.ystadsteater.se"
+    },
+    {
+      "id": "evt-upcoming-3",
+      "title": "Ranelid & Bonnelid – Möjligheterna är oändliga [Slutsålt]",
+      "start": "2026-12-14T18:00:00+01:00",
+      "end": "2026-12-14T20:00:00+01:00",
+      "location": "Malmö Live Konserthus, Malmö",
+      "description": "Mötet på scenen mellan generationer och musikens oändliga samtal. Hur ordet och melodin smälter samman i en hyllning till människans livsmod."
+    },
+    {
+      "id": "evt-upcoming-4",
+      "title": "Lunds Universitets Aula – Om språket, skolan och människan [Fri entré]",
+      "start": "2027-01-21T17:30:00+01:00",
+      "end": "2027-01-21T19:00:00+01:00",
+      "location": "Universitetsplatsen, Lund",
+      "description": "Öppen gästföreläsning om bildningsideal, lärarrollen och konstens frihet. Föranmälan via arrangören. https://www.lu.se"
+    },
+    {
+      "id": "evt-upcoming-5",
+      "title": "Göteborgs Konserthus – Det levande ordet",
+      "start": "2027-02-11T19:00:00+01:00",
+      "end": "2027-02-11T21:00:00+01:00",
+      "location": "Götaplatsen, Göteborg",
+      "description": "Stort scenframträdande och möte med läsarna i Göteborg. Signering av böcker i pausen och efteråt. https://www.gso.se"
+    }
+  ]
+}
