@@ -133,7 +133,7 @@
       <nav class="hidden md:flex items-center gap-4 lg:gap-space-md whitespace-nowrap">
         <a href="#top" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-primary font-bold py-2">Startsida</a>
         <a href="#livsverket" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Livsverket</a>
-        <a href="#bocker-verk" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Böcker &amp; Verk</a>
+        <a href="bocker.html" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Böcker &amp; Verk</a>
         <a href="#bokning-kalender" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Kalender &amp; Kontakt</a>
         <a href="galleri.html" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">
           Galleri &amp; Media
@@ -310,8 +310,8 @@
             </p>
           </div>
           <div class="pt-space-sm border-t border-parchment-border/60">
-            <a href="#bocker-verk" class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-primary font-bold hover:text-deep-bordeaux transition-colors group-hover:translate-x-1 duration-200">
-              <span>Utforska böckerna</span>
+            <a href="bocker.html" class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-primary font-bold hover:text-deep-bordeaux transition-colors group-hover:translate-x-1 duration-200">
+              <span>Utforska alla 45 böcker &amp; läsprov</span>
               <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
             </a>
           </div>
@@ -412,16 +412,16 @@
       </div>
     </section>
 
-    <!-- 5. UTVALDA BÖCKER & VERK (Med de riktiga omslagen ur resources/) -->
+    <!-- 5. UTVALDA BÖCKER & VERK (Med högupplösta omslag & Första sidans text) -->
     <section id="bocker-verk" class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin py-space-xl w-full scroll-mt-20">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
         <div>
-          <span class="font-label-uppercase text-label-uppercase text-primary uppercase tracking-[0.2em] block mb-1">Bibliografi &amp; Aktuella Verk</span>
+          <span class="font-label-uppercase text-label-uppercase text-primary uppercase tracking-[0.2em] block mb-1">Bibliografi 1983–2025 · Bokomslag &amp; Första sidans text</span>
           <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-burnt-umber">Utvalda Böcker &amp; Verk</h2>
         </div>
-        <a href="https://www.adlibris.com/se/sok?q=Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-primary font-bold hover:text-deep-bordeaux transition-colors group">
-          <span>Se samtliga utgåvor hos Adlibris</span>
-          <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">open_in_new</span>
+        <a href="bocker.html" class="inline-flex items-center gap-2 px-4 py-2.5 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-deep-bordeaux transition-colors shadow-sm self-start md:self-auto">
+          <span class="material-symbols-outlined text-[18px]">menu_book</span>
+          <span>Öppna hela bokbiblioteket (45 böcker &amp; läsprov)</span>
         </a>
       </div>
 
@@ -430,118 +430,137 @@
         <!-- Book 1: Barnmorskan och ängeln -->
         <article class="bg-surface-container-low border border-parchment-border rounded-lg p-space-sm flex flex-col justify-between shadow-[0_8px_24px_rgba(46,28,20,0.06)] hover:shadow-[0_16px_32px_rgba(46,28,20,0.12)] hover:-translate-y-1 transition-all">
           <div>
-            <div class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm">
-              <img src="assets/media/photos/barnmorskan-och-angeln.png" alt="Barnmorskan och ängeln – Bokomslag" class="w-full h-full object-cover" />
+            <a href="bocker.html?book=barnmorskan-och-angeln" class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm flex items-center justify-center p-2 block group">
+              <img src="assets/media/books/barnmorskan-och-angeln.jpg" alt="Barnmorskan och ängeln – Bokomslag" class="max-h-full max-w-full object-contain rounded shadow group-hover:scale-[1.03] transition-transform" />
               <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow">Aktuell roman</span>
-            </div>
+            </a>
             <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Albert Bonniers Förlag · Roman</span>
             <h3 class="font-headline-sm text-headline-sm text-burnt-umber leading-tight">Barnmorskan och ängeln</h3>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
               En episk och djupt mänsklig berättelse om livets början, plikten, nåden och kärlekens mirakel.
             </p>
           </div>
-          <div class="pt-space-sm mt-space-xs flex gap-2">
-            <a href="https://www.adlibris.com/se/sok?q=Barnmorskan+och+%C3%A4ngeln+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
-              <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-              <span>Adlibris</span>
+          <div class="pt-space-sm mt-space-xs flex flex-col gap-1.5">
+            <a href="bocker.html?book=barnmorskan-och-angeln" class="w-full py-2 px-3 bg-vellum-glow hover:bg-primary hover:text-on-primary text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">menu_book</span>
+              <span>Om boken</span>
             </a>
-            <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=Barnmorskan+och+%C3%A4ngeln+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
-              Bokus
-            </a>
+            <div class="flex gap-2">
+              <a href="https://www.adlibris.com/se/sok?q=Barnmorskan+och+%C3%A4ngeln+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1">
+                <span>Adlibris</span>
+              </a>
+              <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=Barnmorskan+och+%C3%A4ngeln+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Bokus
+              </a>
+            </div>
           </div>
         </article>
 
-        <!-- Book 2: Min skolfröken skall vara ett frimärke -->
+        <!-- Book 2: Låt solen lysa över alla barn -->
         <article class="bg-surface-container-low border border-parchment-border rounded-lg p-space-sm flex flex-col justify-between shadow-[0_8px_24px_rgba(46,28,20,0.06)] hover:shadow-[0_16px_32px_rgba(46,28,20,0.12)] hover:-translate-y-1 transition-all">
           <div>
-            <div class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm">
-              <img src="assets/media/photos/IMG_1462.jpg" alt="Rörsjöskolan Malmö 1956 – Siv Liedbergs klass" class="w-full h-full object-cover" />
-              <div class="absolute inset-0 bg-gradient-to-t from-burnt-umber/85 via-burnt-umber/20 to-transparent flex flex-col justify-end p-3">
-                <span class="text-sunlit-ochre font-label-uppercase text-[10px] uppercase tracking-widest">Rörsjöskolan 1956 · Siv Liedberg</span>
-                <span class="text-warm-linen font-headline-sm text-[17px] leading-tight font-bold">Min skolfröken skall vara ett frimärke</span>
-              </div>
-              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-sunlit-ochre text-burnt-umber font-label-uppercase text-[10px] uppercase font-bold tracking-wider shadow">#1 på Topplistan</span>
-            </div>
-            <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Skola, bildning &amp; minnen</span>
-            <h3 class="font-headline-sm text-headline-sm text-burnt-umber leading-tight">Min skolfröken skall vara ett frimärke</h3>
+            <a href="bocker.html?book=lat-solen-lysa-over-alla-barn" class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm flex items-center justify-center p-2 block group">
+              <img src="assets/media/books/lat-solen-lysa-over-alla-barn.jpg" alt="Låt solen lysa över alla barn – Bokomslag" class="max-h-full max-w-full object-contain rounded shadow group-hover:scale-[1.03] transition-transform" />
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-deep-bordeaux text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow">Roman · 2024</span>
+            </a>
+            <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Albert Bonniers Förlag · 2024</span>
+            <h3 class="font-headline-sm text-headline-sm text-burnt-umber leading-tight">Låt solen lysa över alla barn</h3>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
-              En varm hyllning till lågstadielärarinnan Siv Liedberg vid Gamla Rörsjöskolan i Malmö och lärarkallets omätliga betydelse.
+              »Vi fridlyser gullviva, nattviol och johannesört, men inte barnen i Sverige och det är en skam.«
             </p>
           </div>
-          <div class="pt-space-sm mt-space-xs flex gap-2">
-            <a href="https://www.adlibris.com/se/sok?q=Min+skolfr%C3%B6ken+skall+vara+ett+frim%C3%A4rke" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
-              <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-              <span>Adlibris</span>
+          <div class="pt-space-sm mt-space-xs flex flex-col gap-1.5">
+            <a href="bocker.html?book=lat-solen-lysa-over-alla-barn" class="w-full py-2 px-3 bg-vellum-glow hover:bg-primary hover:text-on-primary text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">menu_book</span>
+              <span>Läs första sidan</span>
             </a>
-            <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=Min+skolfr%C3%B6ken+skall+vara+ett+frim%C3%A4rke" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
-              Bokus
-            </a>
+            <div class="flex gap-2">
+              <a href="https://www.adlibris.com/se/sok?q=L%C3%A5t+solen+lysa+%C3%B6ver+alla+barn+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Adlibris
+              </a>
+              <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=L%C3%A5t+solen+lysa+%C3%B6ver+alla+barn+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Bokus
+              </a>
+            </div>
           </div>
         </article>
 
         <!-- Book 3: Världens vackraste kärlekshistoria -->
         <article class="bg-surface-container-low border border-parchment-border rounded-lg p-space-sm flex flex-col justify-between shadow-[0_8px_24px_rgba(46,28,20,0.06)] hover:shadow-[0_16px_32px_rgba(46,28,20,0.12)] hover:-translate-y-1 transition-all">
           <div>
-            <div class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm">
-              <img src="assets/media/photos/IMG_1960.jpg" alt="Världens vackraste kärlekshistoria – Bokomslag" class="w-full h-full object-cover" />
-              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-salvia-green text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow">Roman</span>
-            </div>
-            <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Albert Bonniers Förlag · 2023</span>
+            <a href="bocker.html?book=varldens-vackraste-karlekshistoria" class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm flex items-center justify-center p-2 block group">
+              <img src="assets/media/books/varldens-vackraste-karlekshistoria.jpg" alt="Världens vackraste kärlekshistoria – Bokomslag" class="max-h-full max-w-full object-contain rounded shadow group-hover:scale-[1.03] transition-transform" />
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-salvia-green text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow">Roman · 2022</span>
+            </a>
+            <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Albert Bonniers Förlag · 2022</span>
             <h3 class="font-headline-sm text-headline-sm text-burnt-umber leading-tight">Världens vackraste kärlekshistoria</h3>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
               En strålande roman om livslång trohet och försoning, med omslagsmålning signerad sonen August Nilsson.
             </p>
           </div>
-          <div class="pt-space-sm mt-space-xs flex gap-2">
-            <a href="https://www.adlibris.com/se/sok?q=V%C3%A4rldens+vackraste+k%C3%A4rlekshistoria+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
-              <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-              <span>Adlibris</span>
+          <div class="pt-space-sm mt-space-xs flex flex-col gap-1.5">
+            <a href="bocker.html?book=varldens-vackraste-karlekshistoria" class="w-full py-2 px-3 bg-vellum-glow hover:bg-primary hover:text-on-primary text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">menu_book</span>
+              <span>Läs första sidan</span>
             </a>
-            <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=V%C3%A4rldens+vackraste+k%C3%A4rlekshistoria+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
-              Bokus
-            </a>
+            <div class="flex gap-2">
+              <a href="https://www.adlibris.com/se/sok?q=V%C3%A4rldens+vackraste+k%C3%A4rlekshistoria+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Adlibris
+              </a>
+              <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=V%C3%A4rldens+vackraste+k%C3%A4rlekshistoria+Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Bokus
+              </a>
+            </div>
           </div>
         </article>
 
-        <!-- Book 4: Låt solen lysa över alla barn / Klassiker -->
+        <!-- Book 4: Min skolfröken skall vara ett frimärke -->
         <article class="bg-surface-container-low border border-parchment-border rounded-lg p-space-sm flex flex-col justify-between shadow-[0_8px_24px_rgba(46,28,20,0.06)] hover:shadow-[0_16px_32px_rgba(46,28,20,0.12)] hover:-translate-y-1 transition-all">
           <div>
-            <div class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm">
-              <img src="assets/media/photos/IMG_2153.jpg" alt="Låt solen lysa över alla barn" class="w-full h-full object-cover" />
-              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-deep-bordeaux text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow">7 språk · 14 länder</span>
-            </div>
-            <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Roman &amp; Internationell utgivning</span>
-            <h3 class="font-headline-sm text-headline-sm text-burnt-umber leading-tight">Låt solen lysa över alla barn</h3>
+            <a href="bocker.html?book=min-skolfroken-skall-vara-ett-frimarke" class="w-full aspect-[3/4] bg-vellum-glow rounded overflow-hidden mb-space-sm relative shadow-sm flex items-center justify-center p-2 block group">
+              <img src="assets/media/books/min-skolfroken-skall-vara-ett-frimarke.jpg" alt="Min skolfröken skall vara ett frimärke – Bokomslag" class="max-h-full max-w-full object-contain rounded shadow group-hover:scale-[1.03] transition-transform" />
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-sunlit-ochre text-burnt-umber font-label-uppercase text-[10px] uppercase font-bold tracking-wider shadow">#1 på Topplistan</span>
+            </a>
+            <span class="font-metadata text-metadata text-on-surface-variant block mb-1">Albert Bonniers Förlag · 2020</span>
+            <h3 class="font-headline-sm text-headline-sm text-burnt-umber leading-tight">Min skolfröken skall vara ett frimärke</h3>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
-              Tillsammans med klassiker som <em>Synden</em>, <em>Till alla människor på jorden och i himlen</em> och <em>Min son fäktas mot världen</em>.
+              En varm hyllning till lågstadielärarinnan vid Gamla Rörsjöskolan i Malmö och lärarkallets omätliga betydelse.
             </p>
           </div>
-          <div class="pt-space-sm mt-space-xs flex gap-2">
-            <a href="https://www.adlibris.com/se/sok?q=Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 bg-surface-container hover:bg-primary hover:text-on-primary text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
-              <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
-              <span>Alla titlar</span>
+          <div class="pt-space-sm mt-space-xs flex flex-col gap-1.5">
+            <a href="bocker.html?book=min-skolfroken-skall-vara-ett-frimarke" class="w-full py-2 px-3 bg-vellum-glow hover:bg-primary hover:text-on-primary text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">menu_book</span>
+              <span>Läs första sidan</span>
             </a>
+            <div class="flex gap-2">
+              <a href="https://www.adlibris.com/se/sok?q=Min+skolfr%C3%B6ken+skall+vara+ett+frim%C3%A4rke" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Adlibris
+              </a>
+              <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=Min+skolfr%C3%B6ken+skall+vara+ett+frim%C3%A4rke" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 bg-surface-container hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase text-center rounded-DEFAULT transition-all">
+                Bokus
+              </a>
+            </div>
           </div>
         </article>
       </div>
 
-      <!-- Bottom Banner: Komplett Utgivning -->
+      <!-- Bottom Banner: Komplett Utgivning & Första sidans text -->
       <div class="mt-space-lg bg-vellum-glow border border-parchment-border rounded-lg p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm shadow-[0_4px_20px_rgba(46,28,20,0.06)]">
         <div class="flex items-center gap-space-sm">
           <span class="material-symbols-outlined text-primary text-[32px]">menu_book</span>
           <div>
-            <span class="font-headline-sm text-headline-sm text-burnt-umber block">Närmare 40 utgivna böcker sedan debuten 1983</span>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Romaner, aforismsamlingar, biografiska verk, ljudböcker och e-böcker hos Adlibris och Bokus.</p>
+            <span class="font-headline-sm text-headline-sm text-burnt-umber block">Utforska alla 45 böcker och läs »Första sidans text«</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Från debuten <em>Den överlevande trädgårdsmästaren</em> (1983) och Augustprisvinnaren <em>Synden</em> (1994) till dagens romaner.</p>
           </div>
         </div>
-        <div class="flex items-center gap-2 shrink-0">
-          <a href="https://www.adlibris.com/se/sok?q=Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-space-md py-2.5 bg-burnt-umber text-warm-linen font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-primary transition-colors">
-            <span>Adlibris</span>
-            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+        <div class="flex flex-wrap items-center gap-2 shrink-0">
+          <a href="bocker.html" class="inline-flex items-center gap-2 px-space-md py-2.5 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-deep-bordeaux transition-colors shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">auto_stories</span>
+            <span>Se alla 45 böcker &amp; läsprov</span>
           </a>
-          <a href="https://www.bokus.com/cgi-bin/product_search.cgi?search_word=Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-space-md py-2.5 bg-surface-container-lowest border border-parchment-border text-burnt-umber font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:border-primary transition-colors">
-            <span>Bokus</span>
-            <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          <a href="https://www.adlibris.com/se/sok?q=Bj%C3%B6rn+Ranelid" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 bg-burnt-umber text-warm-linen font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-primary transition-colors">
+            <span>Adlibris</span>
+            <span class="material-symbols-outlined text-[15px]">open_in_new</span>
           </a>
         </div>
       </div>
@@ -800,7 +819,7 @@
         <span class="material-symbols-outlined text-[21px]">home</span>
         <span class="font-metadata text-[11px]">Hem</span>
       </a>
-      <a href="#bocker-verk" class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary">
+      <a href="bocker.html" class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary">
         <span class="material-symbols-outlined text-[21px]">menu_book</span>
         <span class="font-metadata text-[11px]">Böcker</span>
       </a>

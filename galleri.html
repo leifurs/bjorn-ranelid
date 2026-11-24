@@ -126,7 +126,7 @@
       <nav class="hidden md:flex items-center gap-4 lg:gap-space-md whitespace-nowrap">
         <a href="index.html" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Startsida</a>
         <a href="index.html#livsverket" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Livsverket</a>
-        <a href="index.html#bocker-verk" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Böcker &amp; Verk</a>
+        <a href="bocker.html" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Böcker &amp; Verk</a>
         <a href="index.html#bokning-kalender" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-on-surface-variant hover:text-primary transition-colors py-2">Kalender &amp; Kontakt</a>
         <a href="galleri.html" aria-current="page" class="font-label-uppercase text-[11px] lg:text-label-uppercase uppercase text-primary font-bold py-2 flex items-center gap-1">
           <span>Galleri &amp; Media</span>
@@ -278,7 +278,7 @@
         <span class="material-symbols-outlined text-[21px]">home</span>
         <span class="font-metadata text-[11px]">Hem</span>
       </a>
-      <a href="index.html#bocker-verk" class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary">
+      <a href="bocker.html" class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary">
         <span class="material-symbols-outlined text-[21px]">menu_book</span>
         <span class="font-metadata text-[11px]">Böcker</span>
       </a>
@@ -351,6 +351,7 @@
     function renderCard(item) {
       const isVideo = item.type === 'local-video' || item.type === 'youtube';
       const isAudio = item.type === 'audio-link';
+      const isArticle = item.type === 'article';
       const thumbSrc = item.type === 'local-video'
         ? item.poster
         : item.type === 'youtube'
@@ -365,6 +366,19 @@
               <span class="material-symbols-outlined text-[30px]">podcasts</span>
             </div>
             <span class="font-headline-sm text-warm-linen italic text-[17px]">Sveriges Radio P1 · Sommar</span>
+          </div>
+        `;
+      } else if (isArticle) {
+        mediaPreviewHtml = `
+          <div class="relative aspect-[4/3] bg-gradient-to-br from-vellum-glow via-warm-linen to-dusk-peach/50 border-b border-parchment-border flex flex-col justify-between p-5">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-metadata text-[11px] font-semibold shadow-sm">${item.badge}</span>
+              <span class="material-symbols-outlined text-primary text-[26px]">article</span>
+            </div>
+            <blockquote class="font-headline-sm italic text-[17px] text-burnt-umber leading-snug line-clamp-3 my-auto py-2 border-l-2 border-primary pl-3">
+              »Ingen människa bestämmer var och när hon skall födas och vem som skall vara hennes fader och moder.«
+            </blockquote>
+            <span class="font-metadata text-[11px] text-secondary uppercase tracking-wider font-bold">Publicerad i Dagens Nyheter · Läs hela brevet</span>
           </div>
         `;
       } else {
@@ -407,7 +421,7 @@
             </div>
           </div>
           <div class="px-space-sm pb-space-sm pt-1 flex items-center justify-between text-[11px] font-label-uppercase uppercase text-primary font-bold">
-            <span>${item.type === 'local-video' ? 'Spela videoklipp' : item.type === 'youtube' ? 'Spela klipp' : isAudio ? 'Lyssna hos Sveriges Radio' : 'Visa i fullstorlek'}</span>
+            <span>${item.type === 'local-video' ? 'Spela videoklipp' : item.type === 'youtube' ? 'Spela klipp' : isAudio ? 'Lyssna hos Sveriges Radio' : isArticle ? 'Läs hela artikeln' : 'Visa i fullstorlek'}</span>
             <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </article>
@@ -497,7 +511,7 @@
       modalTitle.textContent = item.title;
       modalDesc.textContent = item.description || '';
       if (modalStory) {
-        if (item.story) {
+        if (item.story && item.type !== 'article') {
           modalStory.textContent = item.story;
           modalStory.classList.remove('hidden');
         } else {
@@ -507,11 +521,29 @@
       }
       modalActions.innerHTML = '';
 
-      if (item.type === 'photo') {
+      if (item.type === 'article') {
+        modalStage.className = 'bg-vellum-glow flex items-start justify-center overflow-y-auto min-h-[240px] max-h-[60vh] shrink-0 p-space-md md:p-space-lg border-b border-parchment-border';
+        modalStage.innerHTML = `
+          <div class="max-w-2xl w-full bg-warm-linen border border-parchment-border rounded-xl p-space-md md:p-8 shadow-sm font-body-lg text-[15.5px] md:text-[17px] text-burnt-umber leading-relaxed whitespace-pre-line">
+            ${(item.story || '').replace(/</g, '&lt;').replace(/>/g, '&gt;')}
+          </div>
+        `;
+        if (item.url) {
+          modalActions.innerHTML = `
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-deep-bordeaux transition-colors">
+              <span>Läs på DN.se</span>
+              <span class="material-symbols-outlined text-[15px]">open_in_new</span>
+            </a>
+          `;
+        }
+      } else if (item.type === 'photo') {
+        modalStage.className = 'bg-burnt-umber flex items-center justify-center overflow-hidden min-h-[240px] max-h-[58vh] shrink-0';
         modalStage.innerHTML = `
           <img src="${item.src}" alt="${item.title.replace(/"/g, '&quot;')}" class="max-h-[65vh] w-auto object-contain mx-auto" />
         `;
       } else if (item.type === 'local-video') {
+        modalStage.className = 'bg-burnt-umber flex items-center justify-center overflow-hidden min-h-[240px] max-h-[58vh] shrink-0';
         modalStage.innerHTML = `
           <video controls autoplay playsinline poster="${item.poster}" class="max-h-[65vh] w-auto mx-auto">
             <source src="${item.src}" type="video/mp4">
@@ -519,6 +551,7 @@
           </video>
         `;
       } else if (item.type === 'youtube') {
+        modalStage.className = 'bg-burnt-umber flex items-center justify-center overflow-hidden min-h-[240px] max-h-[58vh] shrink-0';
         modalStage.innerHTML = `
           <div class="w-full aspect-video max-h-[65vh]">
             <iframe class="w-full h-full"
