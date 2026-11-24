@@ -390,11 +390,11 @@ window.RANELID_GALLERY_ITEMS = [
     id: 'img-till-alla-manniskor',
     type: 'photo',
     category: 'sprak',
-    badge: 'Augustnominerad · 1997',
+    badge: 'Roman · 1997',
     location: 'Bonnier Alba',
     year: '1997',
     title: 'Till alla människor på jorden och i himlen',
-    description: 'Den hyllade och Augustprisnominerade romanen från 1997.',
+    description: 'Den hyllade och självbiografiska romanen från 1997 om uppväxten i Malmö och en kärleksförklaring till fadern.',
     src: 'assets/media/photos/IMG_2906.jpg'
   },
   {
