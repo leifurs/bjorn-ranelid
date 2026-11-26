@@ -309,18 +309,6 @@ window.RANELID_GALLERY_ITEMS = [
     "featured": true
   },
   {
-    "id": "img-bla-rock-appellund",
-    "type": "photo",
-    "category": "liv",
-    "badge": "Porträtt · Österlen",
-    "location": "Kivik, Österlen",
-    "year": "Äppelblomning",
-    "title": "I kornblå rock bland blommande äppelträd",
-    "description": "Björn Ranelid mitt i de blommande äppellundarna på Österlen under vårhimlen.",
-    "src": "assets/media/photos/bla-rock-i-appellund.jpg",
-    "featured": true
-  },
-  {
     "id": "img-predikstolen",
     "type": "photo",
     "category": "liv",
