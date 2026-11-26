@@ -152,8 +152,8 @@ window.RANELID_BOOKS = [
     "slug": "oppet-brev-till-george-w-bush",
     "title": "Öppet brev till George W Bush",
     "year": 2014,
-    "genre": "Roman / Noveller",
-    "badge": "2014",
+    "genre": "Roman",
+    "badge": "Roman · 2014",
     "publisher": "Albert Bonniers Förlag",
     "cover": "assets/media/books/oppet-brev-till-george-w-bush.jpg",
     "featured": false,
@@ -186,7 +186,7 @@ window.RANELID_BOOKS = [
   },
   {
     "slug": "tyst-i-klassen",
-    "title": "Tyst i klassen",
+    "title": "Tyst i klassen!",
     "year": 2011,
     "genre": "Roman",
     "badge": "Roman · 2011",
@@ -330,7 +330,7 @@ window.RANELID_BOOKS = [
   },
   {
     "slug": "david-puma-och-drottning-silvia",
-    "title": "David puma och drottning Silvia",
+    "title": "david puma och drottning Silvia",
     "year": 2002,
     "genre": "Roman",
     "badge": "Roman · 2002",
