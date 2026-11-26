@@ -19,12 +19,12 @@ window.RANELID_GALLERY_ITEMS = [
   {
     "id": "vid-konstsamling",
     "type": "local-video",
-    "category": "konst",
-    "badge": "Eget videoklipp · Konsten i Kivik",
-    "location": "Kivik / Stockholm",
-    "year": "Konstsamling",
-    "title": "Konstverket på väggen i bottenvåningen i Kivik (målat av Björn Ranelid) & konstsamlingen",
-    "description": "Överst på väggen i bottenvåningen i Kivik syns det stora konstverket som Björn Ranelid själv har målat, omgivet av hemmets konst- och skulptursamling.",
+    "category": "liv",
+    "badge": "Eget videoklipp · Vigselförrättare",
+    "location": "Huset Mirakel, Kivik",
+    "year": "Bröllopshälsning",
+    "title": "Bröllopshälsning om kärleken från huset Mirakel i Kivik",
+    "description": "»Kärleken är mäktigare än allting annat på denna jord.« Björn Ranelid talar om kärleken i en varm bröllopshälsning, filmad av Margareta i deras hus Mirakel omgivet av böcker och konst.",
     "src": "assets/media/videos/IMG_2775.mp4",
     "poster": "assets/media/videos/IMG_2775_poster.jpg"
   },
