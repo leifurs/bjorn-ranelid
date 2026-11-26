@@ -17,6 +17,18 @@ window.RANELID_BOOKS = [
     "firstPageText": "En episk och djupt mänsklig berättelse om livets början, plikten, nåden och kärlekens mirakel – om barnmorskans kall att ta emot livets första andetag på jorden."
   },
   {
+    "slug": "manniskan-ar-ett-mirakel",
+    "title": "Människan är ett mirakel",
+    "year": 2025,
+    "genre": "Samtalsbok · Filosofi & Vetenskap",
+    "badge": "Ulf Danielsson & Björn Ranelid",
+    "publisher": "Fri Tanke",
+    "cover": "assets/media/books/manniskan-ar-ett-mirakel.jpg",
+    "featured": true,
+    "highlight": true,
+    "firstPageText": "DET SVENSKA SPRÅKETS vackraste ord kan man läsa från två håll som bildar ledet till människans hjärta, nämligen tillit.\n\nVisste ni att man kan lägga höstens löv när det gulnar och rodnar och glöder mellan två bokblad och göra dem till syskon i samma familj som bär efternamnet Förgänglighet, glöm mig inte.\n\nVi bör minnas vissa händelser i våra liv som leder åt oväntade håll. Förtröstan och tillit kan vara ett par av människans ledstjärnor. Fruktan och rädsla, misstänksamhet och ängslan kan ofta hindra individen från att mötas, ansikte mot ansikte.\n\nDenna bok som ni just börjat läsa har en besynnerlig och osannolik förhistoria. Den 26 september år 2024 blev jag intervjuad av journalisten Anders Holmberg i programmet 30 minuter i Sveriges Television.\n\nDet skedde i samband med Bokmässan i Göteborg. Jag hade skrivit ett par sidor om evolutionsläran och teorin big bang i min bok med titeln Låt solen lysa över alla barn.\n\nAnders Holmberg uppehöll sig en lång stund i programmet vid de passagerna och han hade dessförinnan låtit en av redaktionens medlemmar ringa professorn i teoretisk fysik Ulf Danielsson och bett denne kommentera vad jag skrivit om evolutionsteorin och the big bang."
+  },
+  {
     "slug": "lat-solen-lysa-over-alla-barn",
     "title": "Låt solen lysa över alla barn",
     "year": 2024,
@@ -542,7 +554,7 @@ window.RANELID_BOOKS = [
     "cover": "assets/media/books/pafagelns-langtan.jpg",
     "featured": false,
     "highlight": false,
-    "firstPageText": "Dvärgen döper jättarna och sprider sig i tiden.\n\nNär dvärgen Valentin Bager låg i sängen på natten, tog han mått på världen och förvandlades till en eldsländare av yamanastammen som bar sina hemligheter från en otillgänglig bergsgrotta, och emellanåt släppte han ljuden av skallerorm, buffel och mycket milt slingan av fågelpenna mot agavepapper i skenet av vaklampan i sjuksalen, genom väggar och tak till de sömnlösa våningarna som blev syskon till drömmar och syner i feberkroppen: Var finns vännerna och de älskade i stockhus, jordkulor, tegelkärl och löften av sävmattor surrade i bamburör.\n\nDet svarta håret korsade sina ändar och vilade mot kudden och linnet på axlar och hals. Skäggborsten täckte mer än halva ansiktet, och världen mätte en meter och tjugoåtta centimeter från den utslagna skalplocken till fotvalven.\n\nNu var det nära att försona sig med sina mått och innan han frågade efter de andra dvärgarna, förberedde läkarna en nödlögn och enades om ett uppskov med sanningen."
+    "firstPageText": "DVÄRGEN DÖPER JÄTTARNA OCH SPRIDER SIG I TIDEN\n\nNär dvärgen Valentin Bager låg i sängen på natten, tog han mått på världen och förvandlades till en eldsländare av yamanastammen som bar sina hemligheter från en otillgänglig bergsgrotta, och emellanåt släppte han ljuden av skallerorm, buffel och mycket milt slingan av fågelpenna mot agavepapper i skenet av vaxlampan i sjuksalen, genom väggar och tak till de sömnlösa i våningarna som blev syskon till drömmar och syner i feberkroppen: Var finns vännerna och de älskande i stockhus, jordkulor, tegelkärl och löften av sävmattor surrade i bamburör?\n\nDet svarta håret korsade sina ändar och vilade mot kudden och linnet på axlar och hals. Skäggborsten täckte mer än halva ansiktet, och världen mätte en meter och tjugoåtta centimeter från den utslagna skalplocken till fotvalven.\n\nNu var han nära att försona sig med sina mått och innan han frågade efter de andra dvärgarna, förberedde läkarna en nödlögn och enades om ett uppskov med sanningen.\n\nKlinikchefen Ulla Ringblom kunde inte förutse att Valentin stod i begrepp att förändra hennes liv och äktenskap i djup och avgörande mening.\n\nSjälarna i det stora huset reste sig som orgelpipor, och i varje utrymme trampade någon på pedalen i verket. De jämrade sig i vagnshjulet som rullade på stenar och jord av minnen till den vackraste randen mellan fruktan och hopp, men"
   },
   {
     "slug": "i-glastiden",
