@@ -178,10 +178,11 @@ async function fetchCalendarEvents() {
     }
   }
 
-  // 2. iCal (.ics) flöde
+  // 2. iCal (.ics) flöde (med cache-busting så nya händelser syns direkt vid omladdning)
   if (cfg.icalUrl) {
     try {
-      const res = await fetch(cfg.icalUrl);
+      const sep = cfg.icalUrl.includes('?') ? '&' : '?';
+      const res = await fetch(`${cfg.icalUrl}${sep}_t=${Date.now()}`, { cache: 'no-store' });
       if (res.ok) {
         const text = await res.text();
         return parseIcsFeed(text);
