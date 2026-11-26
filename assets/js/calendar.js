@@ -12,13 +12,13 @@
 
 window.RANELID_CALENDAR_CONFIG = {
   // Alternativ 1: Google Calendar API v3 (Rekommenderas för direkt JSON-hämtning)
-  googleCalendarId: '', // T.ex. 'din-kalender-id@group.calendar.google.com'
+  googleCalendarId: '693ecad573897af7c3ffc6d8a3fa27f23a79dac1369253a997490c2f312c407b@group.calendar.google.com',
   googleApiKey: '',     // Begränsad publik Google Calendar API-nyckel
 
-  // Alternativ 2: Publik iCal-URL (.ics) via valfri proxy/worker (helt utan API-nyckel)
-  icalUrl: '',
+  // Alternativ 2: Publik iCal-URL (.ics) i realtid från Google Kalender ("Ranelid")
+  icalUrl: 'https://ranelid-cal-feed.netlify.app/.netlify/functions/ical?id=693ecad573897af7c3ffc6d8a3fa27f23a79dac1369253a997490c2f312c407b%40group.calendar.google.com',
 
-  // Alternativ 3: Lokal fallback / demodata (används automatiskt tills Google Kalender kopplas på)
+  // Alternativ 3: Lokal fallback / demodata (används om nätverket ligger nere)
   fallbackJsonUrl: 'assets/data/events.json',
 
   // Hur många nyligen genomförda evenemang som ska visas som referens under kommande
