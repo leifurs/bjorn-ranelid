@@ -630,11 +630,11 @@ window.RANELID_GALLERY_ITEMS = [
     "id": "img-portratt-skratt",
     "type": "photo",
     "category": "liv",
-    "badge": "Porträtt",
+    "badge": "Porträtt · Foto: Peter Carlsson",
     "location": "Kivik",
     "year": "Officiellt porträtt",
     "title": "Livsglädjen och leendet",
-    "description": "Svartvitt studiporträtt av Björn Ranelid.",
+    "description": "Svartvitt studioporträtt av Björn Ranelid. Foto: Peter Carlsson.",
     "src": "assets/media/photos/portratt-svartvit.jpg"
   },
   {
