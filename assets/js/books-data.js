@@ -521,6 +521,30 @@ window.RANELID_BOOKS = [
     "firstPageText": "Björn Ranelids personliga och poetiska skildring av glaskonstnären, målaren och skulptören Erik Höglunds skapande under 1980-talet."
   },
   {
+    "slug": "david-hills-obotliga-minne",
+    "title": "David Hills obotliga minne",
+    "year": 1987,
+    "genre": "Roman",
+    "badge": "Roman · 1987",
+    "publisher": "Bonniers",
+    "cover": "assets/media/books/david-hills-obotliga-minne.jpg",
+    "featured": false,
+    "highlight": false,
+    "firstPageText": "Tvåhundra nittioen dagar och nätter efter den första branden.\n\nI dag besegrade jag guden i en gumma och hennes son från Limhamn som månglar fisk bland de stora villorna i kvarteren. Min tid är utan skal och mitt minne fredlöst, så länge lögnens gräshoppor äter av mina ängar. De försäger sig, när de lyfter och överlistar solen.\n\nJag hämtade två kaniner från vindsvåningen. De var döda. Ögonen var öppna och uttorkade och det hade runnit litet blod ur deras munnar. Kropparna var vridna, och jag tänkte att benen i dem vittrat. På buk och rygg fanns djupa sår.\n\nMannen drar en kärra några kilometer längs Öresund och badstranden i Malmö och vid hans sida går en kvinna. De är mor och son och i detta lever något som inte kan liknas vid väggar och tomtmark här, eftersom de rör sig i bilden och saknar mått.\n\nDeras namn är Helge och Elin.\n\nLjud och dofter är i dem, men de säger inte många ord när någon kan höra dem, och tydare och samlare må belägra de allmänna innan de närmar sig de två.\n\nHelge ser i vattnet och säger: I dag sålde vi allt på två timmar och jag löste ett problem med tabulatorn i räknemaskinen medan jag rensade torsk."
+  },
+  {
+    "slug": "pafagelns-langtan",
+    "title": "Påfågelns längtan",
+    "year": 1986,
+    "genre": "Roman",
+    "badge": "Roman · 1986",
+    "publisher": "Bonniers",
+    "cover": "assets/media/books/pafagelns-langtan.jpg",
+    "featured": false,
+    "highlight": false,
+    "firstPageText": "Dvärgen döper jättarna och sprider sig i tiden.\n\nNär dvärgen Valentin Bager låg i sängen på natten, tog han mått på världen och förvandlades till en eldsländare av yamanastammen som bar sina hemligheter från en otillgänglig bergsgrotta, och emellanåt släppte han ljuden av skallerorm, buffel och mycket milt slingan av fågelpenna mot agavepapper i skenet av vaklampan i sjuksalen, genom väggar och tak till de sömnlösa våningarna som blev syskon till drömmar och syner i feberkroppen: Var finns vännerna och de älskade i stockhus, jordkulor, tegelkärl och löften av sävmattor surrade i bamburör.\n\nDet svarta håret korsade sina ändar och vilade mot kudden och linnet på axlar och hals. Skäggborsten täckte mer än halva ansiktet, och världen mätte en meter och tjugoåtta centimeter från den utslagna skalplocken till fotvalven.\n\nNu var det nära att försona sig med sina mått och innan han frågade efter de andra dvärgarna, förberedde läkarna en nödlögn och enades om ett uppskov med sanningen."
+  },
+  {
     "slug": "i-glastiden",
     "title": "I glastiden",
     "year": 1985,

@@ -394,12 +394,12 @@
     }
 
     function renderCard(item) {
-      const isVideo = item.type === 'local-video' || item.type === 'youtube';
+      const isVideo = item.type === 'local-video' || item.type === 'youtube' || item.type === 'vimeo';
       const isAudio = item.type === 'audio-link';
       const isArticle = item.type === 'article';
       const thumbSrc = item.type === 'local-video'
         ? item.poster
-        : item.type === 'youtube'
+        : (item.type === 'youtube' || item.type === 'vimeo')
           ? item.thumbnail
           : item.src;
 
@@ -410,7 +410,7 @@
             <div class="w-14 h-14 rounded-full bg-warm-linen/95 text-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
               <span class="material-symbols-outlined text-[30px]">podcasts</span>
             </div>
-            <span class="font-headline-sm text-warm-linen italic text-[17px]">Sveriges Radio P1 · Sommar</span>
+            <span class="font-headline-sm text-warm-linen italic text-[17px]">${item.audioLabel || 'Sveriges Radio P1'}</span>
           </div>
         `;
       } else if (isArticle) {
@@ -421,9 +421,9 @@
               <span class="material-symbols-outlined text-primary text-[26px]">article</span>
             </div>
             <blockquote class="font-headline-sm italic text-[17px] text-burnt-umber leading-snug line-clamp-3 my-auto py-2 border-l-2 border-primary pl-3">
-              »Ingen människa bestämmer var och när hon skall födas och vem som skall vara hennes fader och moder.«
+              ${item.quote || '»Ordet färdas med ljusets hastighet trettio tusen mil i sekunden.«'}
             </blockquote>
-            <span class="font-metadata text-[11px] text-secondary uppercase tracking-wider font-bold">Publicerad i Dagens Nyheter · Läs hela brevet</span>
+            <span class="font-metadata text-[11px] text-secondary uppercase tracking-wider font-bold">${item.sourceLabel || 'Krönika & text av Björn Ranelid · Läs i fulltext'}</span>
           </div>
         `;
       } else {
@@ -466,7 +466,7 @@
             </div>
           </div>
           <div class="px-space-sm pb-space-sm pt-1 flex items-center justify-between text-[11px] font-label-uppercase uppercase text-primary font-bold">
-            <span>${item.type === 'local-video' ? 'Spela videoklipp' : item.type === 'youtube' ? 'Spela klipp' : isAudio ? 'Lyssna hos Sveriges Radio' : isArticle ? 'Läs hela artikeln' : 'Visa i fullstorlek'}</span>
+            <span>${item.type === 'local-video' ? 'Spela videoklipp' : (item.type === 'youtube' || item.type === 'vimeo') ? 'Spela klipp' : isAudio ? 'Lyssna hos Sveriges Radio' : isArticle ? 'Läs hela texten' : 'Visa i fullstorlek'}</span>
             <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </div>
         </article>
@@ -620,6 +620,25 @@
           <a href="${item.url}" target="_blank" rel="noopener noreferrer"
              class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-deep-bordeaux transition-colors">
             <span>Öppna på YouTube</span>
+            <span class="material-symbols-outlined text-[15px]">open_in_new</span>
+          </a>
+        `;
+      } else if (item.type === 'vimeo') {
+        modalStage.className = 'bg-burnt-umber flex items-center justify-center overflow-hidden min-h-[240px] max-h-[58vh] shrink-0';
+        modalStage.innerHTML = `
+          <div class="w-full aspect-video max-h-[65vh]">
+            <iframe class="w-full h-full"
+              src="https://player.vimeo.com/video/${item.videoId}?autoplay=1&title=0&byline=0&portrait=0"
+              title="${item.title.replace(/"/g, '&quot;')}"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        `;
+        modalActions.innerHTML = `
+          <a href="${item.url}" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-DEFAULT hover:bg-deep-bordeaux transition-colors">
+            <span>Öppna på Vimeo</span>
             <span class="material-symbols-outlined text-[15px]">open_in_new</span>
           </a>
         `;
