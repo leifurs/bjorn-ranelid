@@ -1,7 +1,5 @@
 /**
  * Komplett kurerat arkiv för Björn Ranelids Galleri & Mediasamling
- * Bygger på samtliga fotografier, egna videoklipp (.mp4), artiklar och länksamlingen (YouTube & SR) i projektmappen.
- * (Samtliga 45 böcker och "Första sidans text" finns nu i bocker.html & assets/js/books-data.js)
  */
 
 window.RANELID_GALLERY_ITEMS = [
@@ -22,11 +20,11 @@ window.RANELID_GALLERY_ITEMS = [
     "id": "vid-konstsamling",
     "type": "local-video",
     "category": "konst",
-    "badge": "Eget videoklipp · Konsten",
+    "badge": "Eget videoklipp · Konsten i Kivik",
     "location": "Kivik / Stockholm",
     "year": "Konstsamling",
-    "title": "Konsten på väggarna – Målningar & skulptur",
-    "description": "En vandring längs konstverken, porträtten och det expressionistiska Österlen-måleriet i hemmet.",
+    "title": "Konstverket på väggen i bottenvåningen i Kivik (målat av Björn Ranelid) & konstsamlingen",
+    "description": "Överst på väggen i bottenvåningen i Kivik syns det stora konstverket som Björn Ranelid själv har målat, omgivet av hemmets konst- och skulptursamling.",
     "src": "assets/media/videos/IMG_2775.mp4",
     "poster": "assets/media/videos/IMG_2775_poster.jpg"
   },
@@ -59,11 +57,11 @@ window.RANELID_GALLERY_ITEMS = [
     "id": "vid-osterlen-malning-hemmet",
     "type": "local-video",
     "category": "konst",
-    "badge": "Eget videoklipp · Konsten",
+    "badge": "Eget videoklipp · Målad av Björn Ranelid",
     "location": "Galleriet i hemmet",
     "year": "Konstsamling",
-    "title": "Det stora Österlen-landskapet och konstverken",
-    "description": "Nära blick på det glödande konstverket och målningarna i Björn Ranelids hem.",
+    "title": "Björn Ranelids egna målningar – Vy från strandtomten & konstverket i Kivik",
+    "description": "Den stora tavlan med vy från strandtomten samt konstverket på väggen i bottenvåningen i Kivik, båda målade av Björn Ranelid.",
     "src": "assets/media/videos/IMG_0901.mp4",
     "poster": "assets/media/videos/IMG_0901_poster.jpg"
   },
@@ -108,11 +106,11 @@ window.RANELID_GALLERY_ITEMS = [
     "id": "img-paradismust-appellund",
     "type": "photo",
     "category": "liv",
-    "badge": "Österlen · Kivik",
+    "badge": "5× Svensk Mästare · Paradismust",
     "location": "Kiviks äppelodlingar",
     "year": "Österlen",
-    "title": "Bland äppelträden i Kivik med Paradismusten",
-    "description": "Björn Ranelid mitt i de skånska äppelodlingarna på Österlen.",
+    "title": "Bland äppelträden i Kivik med Paradismusten (Svensk Mästare 5 år i rad)",
+    "description": "Björn Ranelid i äppelodlingarna på Österlen med Björn Ranelid Paradismust, som vunnit Svenska Mästerskapet för klarpressad must fem år i rad.",
     "src": "assets/media/photos/b5-img-2668.jpg",
     "featured": true
   },
@@ -181,11 +179,11 @@ window.RANELID_GALLERY_ITEMS = [
     "id": "img-osterlen-tavla",
     "type": "photo",
     "category": "konst",
-    "badge": "Konsten · Oljemålning",
+    "badge": "Konsten · Målad av Björn Ranelid",
     "location": "Kivik, Österlen",
     "year": "Originalverk",
-    "title": "Österlens glödande rapsfält och jord",
-    "description": "Den expressionistiska oljemålning i ockra, terrakotta och umbra som inspirerat hela hemsidans färgpalett.",
+    "title": "Vy från strandtomten i Kivik – Målad av Björn Ranelid",
+    "description": "Den stora tavlan med vy från Björn och Margaretas strandtomt på Österlen, målad av Björn Ranelid själv (och som även inspirerat hemsidans färgpalett).",
     "src": "assets/media/photos/IMG_0338.jpg",
     "featured": true
   },
@@ -297,11 +295,11 @@ window.RANELID_GALLERY_ITEMS = [
     "id": "img-paradismust",
     "type": "photo",
     "category": "liv",
-    "badge": "Kiviks Musteri",
+    "badge": "5× Svensk Mästare · Kiviks Musteri",
     "location": "Kivik, Österlen",
     "year": "2026",
-    "title": "Björn Ranelid Paradismust – Kiviks Musteri",
-    "description": "»Av handplockade äpplen från Österlen – Ordet är störst«. Flaskor signerade i samarbete med Kiviks Musteri.",
+    "title": "Björn Ranelid Paradismust – Svensk Mästare fem år i rad",
+    "description": "Björn Ranelid Paradismust har vunnit Svenska Mästerskapet för klarpressad must fem år i rad. »Av handplockade äpplen från Österlen – Ordet är störst.«",
     "src": "assets/media/photos/IMG_3083.jpg"
   },
   {
