@@ -14,7 +14,7 @@ window.RANELID_BOOKS = [
     "cover": "assets/media/books/barnmorskan-och-angeln.jpg",
     "featured": true,
     "highlight": true,
-    "firstPageText": "En episk och djupt mänsklig berättelse om livets början, plikten, nåden och kärlekens mirakel – om barnmorskans kall att ta emot livets första andetag på jorden."
+    "firstPageText": "En natt sjöng näktergalen i barnmorskan Maria Sanders trädgård och hon trodde att det var en ängel som spelade panflöjt och kom för att hämta henne.\n\nMaria sade att hela mänskligheten fick plats i det nyfödda barnets pupill och att alla barnmorskor var världsmedborgare och de talade alla språk med sina hjärtan och händer under förlossningen.\n\nMaria var sjuttiotre år när hon blev ombedd att förlösa en sextonårig flicka som bodde hemma hos sina föräldrar i Diplomatstaden i Stockholm.\n\nDenna förlossning skulle bli den sista som Maria utförde utanför sjukhuset. Hon hade ringt en överläkare och berättat vad hon stod i begrepp att göra och han hade gett henne sitt tillstånd, ty han visste att Maria var samvetsgrann och inte skulle göra något som äventyrade barnets och moderns liv.\n\nFöräldrarna ville inte att dottern skulle föda på ett sjukhus och de hade känt Marias make Aron Sander i många år. Flickans pappa var anställd inom hovstaten och modern var bördig ur en känd adelsfamilj i Sverige."
   },
   {
     "slug": "manniskan-ar-ett-mirakel",

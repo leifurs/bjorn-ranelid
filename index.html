@@ -302,6 +302,61 @@
       </div>
     </section>
 
+    <!-- 2B. DOKUMENTÄRFILMEN: BJÖRN RANELID – MÄNNISKAN OCH ORDET (SVT 2017) -->
+    <section id="dokumentar" aria-label="Dokumentärfilmen Björn Ranelid – Människan och Ordet" class="w-full bg-vellum-glow/85 border-b border-parchment-border py-space-xl scroll-mt-20">
+      <div class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+          <!-- Vänster: 16:9 Inbäddad spelare med snabb click-to-play fasad -->
+          <div class="lg:col-span-7">
+            <div id="doc-player-box" class="relative aspect-video w-full rounded-xl overflow-hidden shadow-[0_24px_54px_-12px_rgba(46,28,20,0.32)] border-2 border-parchment-border bg-burnt-umber group cursor-pointer"
+                 onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/u7h5rZvOfPI?autoplay=1&rel=0\' title=\'Björn Ranelid – Människan och Ordet\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen></iframe>'; this.onclick=null;">
+              <img src="assets/media/photos/dokumentar-manniskan-och-ordet.jpg" alt="Björn Ranelid – Människan och Ordet (Dokumentärfilm av Dennis Larsson, SVT 2017)" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-burnt-umber/85 via-burnt-umber/25 to-transparent flex flex-col items-center justify-center p-6 text-center">
+                <div class="w-20 h-20 rounded-full bg-terracotta-blaze/95 text-on-primary shadow-[0_12px_32px_rgba(165,58,0,0.45)] flex items-center justify-center group-hover:scale-110 transition-transform mb-3 border-2 border-warm-linen/80">
+                  <span class="material-symbols-outlined text-[42px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                </div>
+                <span class="px-3.5 py-1 rounded-full bg-burnt-umber/85 backdrop-blur-sm text-warm-linen font-label-uppercase text-[11px] uppercase tracking-[0.18em] border border-sunlit-ochre/40">
+                  Spela hela dokumentärfilmen här
+                </span>
+              </div>
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-primary text-on-primary font-label-uppercase text-[10px] uppercase tracking-wider shadow-md">
+                SVT · Premiär 17 mars 2017
+              </span>
+            </div>
+          </div>
+
+          <!-- Höger: Redaktionell presentation -->
+          <div class="lg:col-span-5 flex flex-col items-start">
+            <div class="inline-flex items-center gap-2 mb-space-xs">
+              <span class="w-6 h-[2px] bg-primary"></span>
+              <span class="font-label-uppercase text-label-uppercase text-primary uppercase tracking-[0.2em]">Dokumentärfilm · Sveriges Television</span>
+            </div>
+            <h2 class="font-headline-lg text-[28px] md:text-[34px] text-burnt-umber leading-tight mb-space-sm">
+              Björn Ranelid – Människan och Ordet
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-sm">
+              Filmaren <strong>Dennis Larsson</strong> följde Björn Ranelid på nära håll under <strong>fyra år</strong> — från scenerna i Sverige och Globen till barndomskvarteren i Malmö, hemmet i Kivik, San Francisco och Amsterdam.
+            </p>
+            <p class="font-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+              Dokumentären skildrar människan, familjen och författarskapet bakom orden och visades första gången den <strong>17 mars 2017 i Sveriges Television</strong>.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-sm">
+              <button type="button" onclick="document.getElementById('doc-player-box').click()"
+                      class="inline-flex items-center gap-2 px-5 py-3 bg-primary hover:bg-deep-bordeaux text-on-primary font-label-uppercase text-[12px] uppercase rounded-DEFAULT shadow-sm transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                <span>Se dokumentären nu</span>
+              </button>
+              <a href="https://youtu.be/u7h5rZvOfPI" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-1.5 px-4 py-3 bg-warm-linen hover:bg-surface-container-high text-burnt-umber border border-parchment-border font-label-uppercase text-[11px] uppercase rounded-DEFAULT transition-colors">
+                <span>Öppna på YouTube</span>
+                <span class="material-symbols-outlined text-[16px] text-primary">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 3. LIVSVERKET & RÖSTEN (Utifrån mötesanteckningarna: Ordet, Scenen/Vigsel, Arkivet/Media/Fotboll) -->
     <section id="livsverket" class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin py-space-xl w-full scroll-mt-20">
       <div class="text-center max-w-2xl mx-auto mb-space-lg">
@@ -325,7 +380,7 @@
           </div>
           <div class="pt-space-sm border-t border-parchment-border/60">
             <a href="bocker" class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase uppercase text-primary font-bold hover:text-deep-bordeaux transition-colors group-hover:translate-x-1 duration-200">
-              <span>Utforska alla 45 böcker &amp; läsprov</span>
+              <span>Utforska alla 48 böcker &amp; läsprov</span>
               <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
             </a>
           </div>
