@@ -814,7 +814,7 @@ window.RANELID_GALLERY_ITEMS = [
     "location": "Borås Tidning",
     "year": "2000",
     "title": "»Kan en värja klyva mörkret?«",
-    "description": "HelSidesrecension av romanen Min son fäktas mot världen.",
+    "description": "Helsidesrecension av romanen Min son fäktas mot världen.",
     "src": "assets/media/photos/IMG_2518.jpg"
   },
   {
@@ -1756,7 +1756,7 @@ window.RANELID_GALLERY_ITEMS = [
     "badge": "Expressen TV",
     "location": "Intervju",
     "year": "Porträtt",
-    "title": "Björn Ranelid om nya stilen: »Yngsta sonen som vill det«",
+    "title": "Björn Ranelid om nya stilen: »Yngste sonen som vill det«",
     "description": "Personligt inslag i Expressen.",
     "thumbnail": "https://i.ytimg.com/vi/mywsLhE2DvY/hqdefault.jpg",
     "url": "https://youtu.be/mywsLhE2DvY"
