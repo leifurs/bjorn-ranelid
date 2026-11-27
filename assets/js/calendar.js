@@ -228,16 +228,16 @@ function renderUpcomingEventRow(evt) {
   // Primär åtgärdsknapp (Biljetter / Slutsålt / Fri entré / Boka info)
   let actionHtml = '';
   if (p.isSoldOut) {
-    actionHtml = `<span class="inline-flex items-center justify-center px-3.5 py-2 bg-surface-container-high text-on-surface-variant font-label-uppercase text-[11px] uppercase rounded-md sm:rounded-DEFAULT font-bold cursor-default select-none whitespace-nowrap">Slutsålt</span>`;
+    actionHtml = `<span class="inline-flex items-center justify-center px-3.5 py-2 bg-surface-container-high text-on-surface-variant font-label-uppercase text-[11px] uppercase rounded-md sm:rounded-lg font-bold cursor-default select-none whitespace-nowrap">Slutsålt</span>`;
   } else if (p.ticketUrl) {
     actionHtml = `
       <a href="${p.ticketUrl}" target="_blank" rel="noopener noreferrer"
-         class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-md sm:rounded-DEFAULT font-bold hover:bg-deep-bordeaux transition-all shadow-sm whitespace-nowrap">
+         class="inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-2 bg-primary text-on-primary font-label-uppercase text-[11px] uppercase rounded-md sm:rounded-lg font-bold hover:bg-deep-bordeaux transition-all shadow-sm whitespace-nowrap">
         <span>Biljetter / Läs mer</span>
         <span class="material-symbols-outlined text-[15px]">open_in_new</span>
       </a>`;
   } else if (p.isFree) {
-    actionHtml = `<span class="inline-flex items-center justify-center px-3.5 py-2 bg-tertiary-fixed text-on-tertiary-fixed font-label-uppercase text-[11px] uppercase rounded-md sm:rounded-DEFAULT font-bold whitespace-nowrap">Fri entré</span>`;
+    actionHtml = `<span class="inline-flex items-center justify-center px-3.5 py-2 bg-tertiary-fixed text-on-tertiary-fixed font-label-uppercase text-[11px] uppercase rounded-md sm:rounded-lg font-bold whitespace-nowrap">Fri entré</span>`;
   }
 
   return `
@@ -302,7 +302,7 @@ function renderPastEventRow(evt) {
   const dt = formatEventTime(evt.start);
   const p = evt.parsed;
   return `
-    <div class="p-space-sm rounded-DEFAULT bg-surface-container-low/80 border border-parchment-border/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 opacity-85 hover:opacity-100 transition-opacity">
+    <div class="p-space-sm rounded-lg bg-surface-container-low/80 border border-parchment-border/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 opacity-85 hover:opacity-100 transition-opacity">
       <div class="flex items-center gap-space-sm">
         <div class="w-12 text-center shrink-0">
           <span class="font-headline-sm text-[18px] font-bold text-on-surface-variant block leading-none">${dt.day}</span>
